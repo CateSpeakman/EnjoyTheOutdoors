@@ -71,18 +71,26 @@ window.onload = function () {
 
             let header = table.createTHead();
             let row = header.insertRow(0);
+            
             let cell1 = row.insertCell(0);
             cell1.innerHTML = "Park Name";
             cell1.style.fontWeight = "bold";
+            
             let cell2 = row.insertCell(1);
             cell2.innerHTML = "City";
             cell2.style.fontWeight = "bold";
+           
             let cell3 = row.insertCell(2);
             cell3.innerHTML = "State";
             cell3.style.fontWeight = "bold";
+            
             let cell4 = row.insertCell(3);
             cell4.innerHTML = "Link";
             cell4.style.fontWeight = "bold";
+            
+            let cell5 = row.insertCell(4);
+            cell5.innerHTML = "Phone";
+            cell5.style.fontWeight = "bold";
 
 
             const typeSelect = document.getElementById("parkType").value;
@@ -114,6 +122,14 @@ window.onload = function () {
                     else {
                         cell4.innerHTML = "Not Available";
                     }
+
+                    let cell5 = row.insertCell(4);
+                    if (objs.parks[i].Phone == 0){
+                        cell5.innerHTML = "N/A"
+                    }
+                    else{
+                    cell5.innerHTML = objs.parks[i].Phone;
+                    }
                 }
             };//end of the for loop for table population from park type dropdown
 
@@ -129,18 +145,26 @@ window.onload = function () {
 
             let header = table.createTHead();
             let row = header.insertRow(0);
+            
             let cell1 = row.insertCell(0);
             cell1.innerHTML = "Park Name";
             cell1.style.fontWeight = "bold";
+            
             let cell2 = row.insertCell(1);
             cell2.innerHTML = "City";
             cell2.style.fontWeight = "bold";
+            
             let cell3 = row.insertCell(2);
             cell3.innerHTML = "State";
             cell3.style.fontWeight = "bold";
+            
             let cell4 = row.insertCell(3);
             cell4.innerHTML = "Link";
             cell4.style.fontWeight = "bold";
+            
+            let cell5 = row.insertCell(4);
+            cell5.innerHTML = "Phone";
+            cell5.style.fontWeight = "bold";
 
             //this is for creating the table based on user selection for park location
 
@@ -166,6 +190,14 @@ window.onload = function () {
                     }
                     else {
                         cell4.innerHTML = "Not Available";
+                    }
+
+                    let cell5 = row.insertCell(4);
+                    if (objs.parks[i].Phone == 0){
+                        cell5.innerHTML = "N/A"
+                    }
+                    else{
+                    cell5.innerHTML = objs.parks[i].Phone;
                     }
                 }
             }//end of the for loop for table population from location dropdown
