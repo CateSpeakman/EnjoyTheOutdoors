@@ -29,19 +29,24 @@
             </li>
         </ul>
     </nav>
-<!-- this section will be the dropdown for the user to select a mountain-->
-    <main class="text-center">
-        <h2>What Mountain Are You Going to Conquer?</h2>
-        <p>Select a mountain from the dropdown that you would like additional information.</p>
-        <div class="text-center">
-            <h3 class="search">Select a Mountain</h3>
+    <!-- this section will be the dropdown for the user to select a mountain-->
+    <main>
+        <section>
+            <div class="text-center">
+                <h2>What Mountain Are You Going to Conquer?</h2>
+                <p>Select a mountain from the dropdown that you would like additional information.</p>
+            </div>
+            <div class="text-center">
+                <h3 class="search">Select a Mountain</h3>
 
-            <form name="mountains" id="mountains">
-                <select id="mountainList" class="custom-select col-6">
-                    <!--this will be populated by the javascript-->
-                </select>
-            </form>
-        </div>
+                <form name="mountains" id="mountains">
+                    <select id="mountainList" class="custom-select col-6">
+                        <!--this will be populated by the javascript-->
+                    </select>
+                </form>
+                <br />
+            </div>
+        </section>
         <div id="locationDiv">
             <table class="table table-striped" id="mountainInfo">
                 <!-- this will be populated by the javascript based on user selection of the dropdown-->
